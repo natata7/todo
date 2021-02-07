@@ -20,7 +20,7 @@ input {
 } 
 
 .container {
-    width: 400px;
+    width: 600px;
     margin: 0 auto;
     padding: 0;
     list-style-type: none;
@@ -64,7 +64,7 @@ input[type="text"]{
     color: #6a9bd8;
 }
 
-ul li {
+ul.todo-list li {
     cursor: pointer;
     position: relative;
     padding: 1em 3em;
@@ -79,13 +79,13 @@ ul li {
     user-select: none; 
   }
   
-ul li.checked {
+ul.todo-list li.checked {
     box-shadow: inset -2px -2px 5px white, inset 3px 3px 5px rgba(0, 0, 0, 0.1);
     text-decoration: line-through;
   }
   
 
-ul li:before {
+ul.todo-list li:before {
     content: " ";
     display: block;
     border: solid 2px #6a9bd8;
@@ -98,7 +98,7 @@ ul li:before {
     margin-top: -0.5em;
 }
   
-ul li.checked::after{
+ul.todo-list li.checked::after{
     content: " ";
     display: block;
     width: 0.3em; 
@@ -121,3 +121,28 @@ ul li.checked::after{
     top: 0;
     padding: 1em;
   }
+
+.controls {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-completed);
+    font-weight: bold;
+    background-color: var(--list-background);
+    height: 3rem;
+    transition: background 2s;
+
+}
+.controls p {
+    font-size: 13px;
+}
+.controls-list {
+    display: flex;
+    list-style: none;
+
+}
+
+.active-list {
+    color: blue;
+}
