@@ -1,0 +1,29 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "Demo:\r https://natata7.github.io/todo/",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix --ext .js,.jsx ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natata7/todo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natata7/todo/issues"
+  },
+  "homepage": "https://github.com/natata7/todo#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1"
+  }
+}
